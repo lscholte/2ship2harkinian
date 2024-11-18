@@ -43,8 +43,8 @@ enum CremiaRewardsOptions {
 };
 
 enum DekuGuardSearchBallsOptions {
-    DEKU_GUARD_SEARCH_BALLS_NEVER,
     DEKU_GUARD_SEARCH_BALLS_NIGHT_ONLY,
+    DEKU_GUARD_SEARCH_BALLS_NEVER,
     DEKU_GUARD_SEARCH_BALLS_ALWAYS,
 };
 
