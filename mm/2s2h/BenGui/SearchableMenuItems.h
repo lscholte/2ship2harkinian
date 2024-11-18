@@ -1377,7 +1377,7 @@ void AddEnhancements() {
                 .widgetOptions = { .defaultVariant = true },
                 .widgetCallback = [](widgetInfo& info) { GfxPatcher_ApplyOverflowTexturePatches(); } },
               { "Fix Completed Heart Container Audio", "gEnhancements.Fixes.CompletedHeartContainerAudio",
-                "Fixes a bug resulting that results in the wrong audio playing upon receiving a 4th piece of heart to "
+                "Fixes a bug that results in the wrong audio playing upon receiving a 4th piece of heart to "
                 "fill a new heart container.",
                 WIDGET_CVAR_CHECKBOX } } } });
     enhancementsSidebar.push_back(

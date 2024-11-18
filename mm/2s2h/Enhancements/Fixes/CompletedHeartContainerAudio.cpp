@@ -6,8 +6,8 @@ extern "C" {
 }
 
 void RegisterCompletedHeartContainerAudio() {
-    REGISTER_VB_SHOULD(VB_COMPLETED_HEART_CONTAINER_AUDIO_FIX, {
-        GetItemId getItemId = va_arg(args, GetItemId);
+    REGISTER_VB_SHOULD(VB_PLAY_HEART_CONTAINER_GET_FANFARE, {
+        GetItemId getItemId = (GetItemId)va_arg(args, int);
         if (CVarGetInteger("gEnhancements.Fixes.CompletedHeartContainerAudio", 0) && getItemId == GI_HEART_PIECE &&
             GET_QUEST_HEART_PIECE_COUNT == 0) {
             *should = true;

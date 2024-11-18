@@ -613,7 +613,7 @@ void DrawEnhancementsMenu() {
 
             UIWidgets::CVarCheckbox("Fix Completed Heart Container Audio",
                                     "gEnhancements.Fixes.CompletedHeartContainerAudio",
-                                    { .tooltip = "Fixes a bug resulting that results in the wrong audio playing upon "
+                                    { .tooltip = "Fixes a bug that results in the wrong audio playing upon "
                                                  "receiving a 4th piece of heart to fill a new heart container." });
 
             if (UIWidgets::CVarCheckbox(

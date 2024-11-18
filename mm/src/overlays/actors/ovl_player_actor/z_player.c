@@ -13523,7 +13523,7 @@ s32 func_808482E0(PlayState* play, Player* this) {
 
             bool vanillaCondition = (this->getItemId == GI_HEART_CONTAINER) ||
                                     ((this->getItemId == GI_HEART_PIECE) && EQ_MAX_QUEST_HEART_PIECE_COUNT);
-            if (GameInteractor_Should(VB_COMPLETED_HEART_CONTAINER_AUDIO_FIX, vanillaCondition, this->getItemId)) {
+            if (GameInteractor_Should(VB_PLAY_HEART_CONTAINER_GET_FANFARE, vanillaCondition, this->getItemId)) {
                 seqId = NA_BGM_GET_HEART | 0x900;
             } else {
                 s32 var_v1;
