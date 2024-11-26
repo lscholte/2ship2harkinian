@@ -760,15 +760,6 @@ void DrawEnhancementsMenu() {
                 RegisterWoodfallMountainAppearance();
             }
 
-            UIWidgets::CVarCombobox(
-                "Deku Guard Search Balls", "gEnhancements.Restorations.DekuGuardSearchBalls",
-                dekuGuardSearchBallsOptions,
-                { .tooltip = "Choose when to show the Deku Palace Guards' search balls\n"
-                             "- Never: Never show the search balls. This matches Majora's Mask 3D behaviour\n"
-                             "- Night Only: Only show the search balls at night. This matches original N64 behaviour.\n"
-                             "- Always: Always show the search balls.",
-                  .defaultIndex = DEKU_GUARD_SEARCH_BALLS_NIGHT_ONLY });
-
             ImGui::EndMenu();
         }
 
@@ -799,6 +790,14 @@ void DrawEnhancementsMenu() {
                                                      "swords. It may still steal other items." })) {
                 RegisterDisableTakkuriSteal();
             }
+
+            UIWidgets::CVarCombobox(
+                "Deku Guard Search Balls", "gEnhancements.Cheats.DekuGuardSearchBalls", dekuGuardSearchBallsOptions,
+                { .tooltip = "Choose when to show the Deku Palace Guards' search balls\n"
+                             "- Never: Never show the search balls. This matches Majora's Mask 3D behaviour\n"
+                             "- Night Only: Only show the search balls at night. This matches original N64 behaviour.\n"
+                             "- Always: Always show the search balls.",
+                  .defaultIndex = DEKU_GUARD_SEARCH_BALLS_NIGHT_ONLY });
             ImGui::EndMenu();
         }
 
