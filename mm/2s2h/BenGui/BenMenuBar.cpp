@@ -617,6 +617,11 @@ void DrawEnhancementsMenu() {
                                     { .tooltip = "Fixes a bug that results in the Ikana Great Fairy fountain looking "
                                                  "green instead of yellow, this was fixed in the EU version" });
 
+            UIWidgets::CVarCheckbox("Fix Completed Heart Container Audio",
+                                    "gEnhancements.Fixes.CompletedHeartContainerAudio",
+                                    { .tooltip = "Fixes a bug that results in the wrong audio playing upon "
+                                                 "receiving a 4th piece of heart to fill a new heart container." });
+
             if (UIWidgets::CVarCheckbox(
                     "Fix Texture overflow OOB", "gEnhancements.Fixes.FixTexturesOOB",
                     { .tooltip = "Fixes textures that normally overflow to be patched with the correct size or format",
@@ -833,6 +838,9 @@ void DrawCheatsMenu() {
         UIWidgets::CVarCheckbox("No Clip", "gCheats.NoClip");
         UIWidgets::CVarCheckbox("Unbreakable Razor Sword", "gCheats.UnbreakableRazorSword");
         UIWidgets::CVarCheckbox("Unrestricted Items", "gCheats.UnrestrictedItems");
+        UIWidgets::CVarCheckbox("Hookshot Anywhere", "gCheats.HookshotAnywhere",
+                                { .tooltip = "Allows most surfaces to be hookshot-able" });
+
         if (UIWidgets::CVarCheckbox("Moon Jump on L", "gCheats.MoonJumpOnL",
                                     { .tooltip = "Holding L makes you float into the air" })) {
             RegisterMoonJumpOnL();
